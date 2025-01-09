@@ -6,13 +6,13 @@ public class BridgeClientConfig {
     private String ip = "127.0.0.1";
     private int port = 20000;
     private String serverName = "SERVER";
-    private String accessToken = "123abc";
+    private String accessToken = "i12.21";
 
     public void loadFromConfig(FileConfiguration config) {
         ip = config.getString("BridgeClient.IP", "127.0.0.1");
         port = config.getInt("BridgeClient.Port", 20000);
         serverName = config.getString("BridgeClient.ServerName", "SERVER");
-        accessToken = config.getString("BridgeClient.AccessToken", "123abc");
+        accessToken = config.getString("BridgeClient.AccessToken", "i12.21");
     }
 
     public String getIp() {
